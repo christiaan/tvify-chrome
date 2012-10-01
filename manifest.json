@@ -1,0 +1,16 @@
+{
+    "name": "TVify",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Try to make all websites usable on TV",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": ["tvify.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
