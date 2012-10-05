@@ -14,6 +14,6 @@
     };
     
     zoomBody();
-    setInterval(zoomBody, 3000);
+    setTimeout(zoomBody, 3000);
 })();
 
