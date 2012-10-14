@@ -3,6 +3,9 @@
     "version": "1.0",
     "manifest_version": 2,
     "description": "Try to make all websites usable on TV",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
     "content_scripts": [
         {
             "matches": [
@@ -12,5 +15,9 @@
             "js": ["tvify.js"],
             "run_at": "document_end"
         }
-    ]
+    ],
+    "background": {
+        "scripts": ["button.js"],
+        "persistent": false
+    }
 }
